@@ -75,22 +75,3 @@ const letterArray = [
 expected output:{ a: 1, b: 1, c: 2, d: 2, f: 2, g: 1 }
 ```
 ---
-/*
-function vowelCount(str) {
-const result = {}; 
-str = str.toLowerCase(); 
-const vowel = ['a', 'e', 'i', 'o', 'u']; 
-str = str.split(''); 
-str.forEach(a => {
-vowel.map(b => {
-if (b == a)
-if (!result.hasOwnProperty(b)) {
-result[b] = 1;
-}
-else {
-result[b] = result[b] + 1
-}
-})
-});
-return result;
-}  */

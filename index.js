@@ -64,7 +64,7 @@ console.log(sumUpPositiveNumbers(input));
 console.log(`======Task4======`);
 
 const letterArray = [
-    ['a', 'b', 'c',],
+    ['a', 'b', 'c'],
     ['c', 'd', 'f'],
     ['d', 'f', 'g'],
 ];
