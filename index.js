@@ -99,7 +99,37 @@ obj[letterArray[i][k]] +=1;
 }
 console.log(obj); 
 */
-
+/*
+const letterArray = [
+    ['a', 'b', 'c', 'r'],
+    ['c', 'd', 'f' , 't'],
+    ['d', 'f', 'g' , 'r'],
+    ];
+    const arr = [];
+    function newobj(input) {
+    const result = {}; 
+    for (i=0 ; i< input.length; i++)
+    {
+    let conter = 0;
+    for (j=0 ; j<input.length ; j++) {
+    if (input[i]===input[j])
+    {
+    conter = conter +1;
+    result[input[i]]=conter;
+    }
+    }
+    }
+    return result;
+    }
+    for (i=0 ; i<letterArray.length ; i++ )
+    {
+    for (j=0 ; j< letterArray[i].length ; j++)
+    {
+    arr.push(letterArray[i][j])
+    }
+    }
+    console.log(newobj(arr)); 
+*/
 
 
 
