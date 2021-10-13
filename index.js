@@ -46,7 +46,7 @@ function whoPassed(obj)
 
   function alisProfit(element)
   {
-    return element.reduce((wert,item)=> wert+ (  item.priceSelling - item.priceBuying),0)
+    return element.reduce((wert,item)=> wert+ (  item.priceSelling - item.priceBuying)*item.sold,0)
   }     
   console.log(alisProfit(dataSeptember));
 
@@ -60,3 +60,47 @@ function whoPassed(obj)
    return input.filter(a => a>0).reduce((a,b)=>a+b)
 };
 console.log(sumUpPositiveNumbers(input));
+
+console.log(`======Task4======`);
+
+const letterArray = [
+    ['a', 'b', 'c',],
+    ['c', 'd', 'f'],
+    ['d', 'f', 'g'],
+];
+
+
+function countLetter(param)
+{   
+   return param.flat().reduce(function(acc,cur)
+    {    
+        return acc[cur] ? ++acc[cur] : acc[cur]=1, acc}
+    ,{})
+}
+console.log(countLetter(letterArray));
+
+
+
+
+/*
+let obj = {};
+for (let i = 0; i < letterArray.length; i++) {
+
+for (let k = 0; k < letterArray[i].length; k++) {
+
+if(!obj[letterArray[i][k]])
+{
+obj[letterArray[i][k]] = 1;
+}
+else{
+obj[letterArray[i][k]] +=1;
+}
+}
+}
+console.log(obj); 
+*/
+
+
+
+
+
